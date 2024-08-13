@@ -1,0 +1,67 @@
+li{
+    padding-top:5px;
+}
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.nav-style{
+    list-style-type:none;
+    display:flex;
+
+          flex-direction:row;
+
+          margin:0px;
+          padding:10px;
+}
+
+
+
+    @media only screen and (max-width: 1000px) {
+        .bar{
+            display: block !important;
+            text-align: right;
+            padding-right:10px ;
+        font-size: xx-large;
+       
+
+            
+
+        }
+        .bar:hover{
+            cursor:pointer;
+        }
+        .nav-style{
+            display: none !important;
+            flex-direction: column !important;
+        }
+        .open{
+         display: flex !important;
+         flex-direction: row;
+         width:100%;
+         font-size: 1.5rem;
+        }
+        
+        
+        li{
+            width:100% !important;
+            display: block !important;
+            margin:0px !important;
+            top:0px !important;
+           
+        }
+        .logo{
+            display: none !important;
+        }
+
+        
+    }
+   

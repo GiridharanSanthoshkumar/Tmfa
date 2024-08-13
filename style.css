@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #000;
+}
+
+.backimg {
+    background-image: url(images/background_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    background-color: #321527 !important;
+    color: #FD8F8F !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-nav .nav-item {
+    text-align: center;
+    flex: 1;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #FD8F8F !important;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #FFF !important;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #FFF !important;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand {
+        position: static;
+        transform: none;
+    }
+
+    .navbar-nav {
+        padding: 5px;
+    }
+}
+
+.navbar {
+    background: #321527 !important;
+}
+
+.navbar-toggler {
+    border-color: #7E4555; /* This line sets the border color to white */
+}
+
+.navbar-toggler-icon {
+    background-color: #FD8F8F; /* This line sets the background color to white */
+}
+
+.full-screen {
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sec1 .container {
+    max-width: 60%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    background-color: #321527;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sec1 .content-column {
+    text-align: center;
+    padding: 2px;
+}
+
+.sec1 .big-size {
+    font-size: 55px;
+    font-weight: none;
+    color: #FFF;
+    padding-top: 10px;
+    margin: 0; /* Remove margin to reduce gap */
+}
+
+.sec1 .small-size {
+    font-size: 22px;
+    color: #FD8F8F;
+    padding-top: 0px;
+    margin: 0; /* Remove margin to reduce gap */
+}
+
+.sec2 .container {
+    color: #FFF;
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    gap: 20px;
+    background: linear-gradient(to bottom, #352227 12%, #844958 88%);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sec2 .image-column,
+.sec2 .content-column {
+    height: 100%;
+    border-radius: 5px;
+}
+
+.sec2 .image-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sec2 .content-column {
+    padding: 20px;
+}
+
+.sec2 .content-column h2,
+.sec2 .content-column p {
+    margin: 0;
+}
+
+.sec2 .btn-view,
+.sec2 .btn-rent {
+    margin-top: 10px;
+}
